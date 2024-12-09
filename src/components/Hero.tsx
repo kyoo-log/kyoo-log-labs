@@ -21,9 +21,9 @@ const Hero = () => {
         </pre>
         
         <div className="space-y-4">
-          <TypewriterEffect text="Unveil hidden patterns in vast datasets" />
-          <p className="text-lg sm:text-xl opacity-75 animate-fadeIn">
-            Exploring the intersection of data and design
+          <TypewriterEffect text="アンベール隠されたパターンをデータセットで" className="font-japanese" />
+          <p className="text-lg sm:text-xl opacity-75 animate-fadeIn font-japanese">
+            データとデザインの交差点を探る
           </p>
         </div>
       </div>

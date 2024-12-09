@@ -3,9 +3,9 @@ import { Github, Mail, Twitter } from 'lucide-react';
 
 const Navigation = () => {
   const links = [
-    { icon: <Github className="w-6 h-6" />, href: "https://github.com", label: "GitHub" },
-    { icon: <Mail className="w-6 h-6" />, href: "mailto:contact@example.com", label: "Email" },
-    { icon: <Twitter className="w-6 h-6" />, href: "https://twitter.com", label: "Twitter" },
+    { icon: <Github className="w-6 h-6" />, href: "https://github.com/kyoo-log", label: "GitHub" },
+    { icon: <Mail className="w-6 h-6" />, href: "mailto:mvkim93@gmail.com", label: "Email" },
+    { icon: <Twitter className="w-6 h-6" />, href: "https://x.com/kyo91_", label: "Twitter" },
   ];
 
   return (
