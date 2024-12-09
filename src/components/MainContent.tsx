@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus } from 'lucide-react';
+import { Plus, Sword } from 'lucide-react';
 
 const MainContent = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -21,9 +21,10 @@ const MainContent = () => {
           className="group relative cursor-pointer"
           onMouseEnter={() => setHoveredItem('project')}
           onMouseLeave={() => setHoveredItem(null)}
-          onClick={() => handleItemClick('https://github.com/yourusername', 'project')}
+          onClick={() => handleItemClick('https://github.com/kyoo-log', 'project')}
         >
-          <h2 className="text-3xl font-monaspace text-glitch-pink hover:animate-glitch transition-all duration-300">
+          <h2 className="text-3xl font-monaspace text-glitch-pink hover:animate-glitch transition-all duration-300 flex items-center">
+            <Sword className="inline-block mr-2" size={24} />
             My Project
             {(hoveredItem === 'project' || clickedItem === 'project') && (
               <Plus className="inline-block ml-2 animate-fade-in" size={24} />
@@ -37,9 +38,10 @@ const MainContent = () => {
           className="group relative cursor-pointer"
           onMouseEnter={() => setHoveredItem('article')}
           onMouseLeave={() => setHoveredItem(null)}
-          onClick={() => handleItemClick('https://medium.com/@yourusername', 'article')}
+          onClick={() => handleItemClick('https://medium.com/@movahmi', 'article')}
         >
-          <h2 className="text-3xl font-monaspace text-glitch-pink hover:animate-glitch transition-all duration-300">
+          <h2 className="text-3xl font-monaspace text-glitch-pink hover:animate-glitch transition-all duration-300 flex items-center">
+            <Sword className="inline-block mr-2" size={24} />
             My Article
             {(hoveredItem === 'article' || clickedItem === 'article') && (
               <Plus className="inline-block ml-2 animate-fade-in" size={24} />
